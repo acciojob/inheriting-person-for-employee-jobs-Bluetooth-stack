@@ -2,7 +2,7 @@
 function Person(name, age) {
 	this.name = name;
 	this.age = age;
-	this..greet = function(){
+	this.greet = function(){
 		console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 	}
 }
@@ -10,7 +10,7 @@ function Person(name, age) {
 function Employee(name, age, jobTitle) {
 	Person.call(this, name, age);
 	this.jobTitle = jobTitle;
-	this..jobGreet = function(){
+	this.jobGreet = function(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`)
 	}
 }
