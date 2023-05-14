@@ -15,8 +15,8 @@ function Employee(name, age, jobTitle) {
 Employee.prototype.jobGreet = function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`)
 }
-const Person = window.Person;
-const Employee = window.Employee
+const Person = win.Person;
+const Employee = win.Employee
 const person = new Person("Alice", 25); 
 person.greet();
 const employee = new Employee("Bob", 30, "Manager")
