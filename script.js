@@ -8,9 +8,9 @@ function Person(name, age) {
 }
 
 function Employee(name, age, jobTitle) {
-	// Person.call(this, name, age);
-	this.name = name;
-	this.age = age;
+	Person.call(this, name, age);
+	// this.name = name;
+	// this.age = age;
 	this.jobTitle = jobTitle;
 	this.jobGreet = ()=>{
 		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${this.jobTitle}`)
